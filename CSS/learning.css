@@ -1,0 +1,465 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo {
+  width: 80px;
+  height: 50px;
+  margin: 2px;
+}
+
+#head {
+  background-color: white;
+  margin: -8px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0px 15px;
+  font-size: 15px;
+}
+
+ul li:hover a {
+  color: blue;
+  font-size: 20px;
+}
+
+a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: #f2738c;
+}
+
+#info {
+  color: blue;
+  font-size: 20px;
+}
+
+.choose {
+  background-image: url("/IMAGES/oxfords.jpg");
+  background-size: 100% 100%;
+  height: 70px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.nursery,
+.prilow,
+.seclow,
+.sechigh,.prihigh {
+  background-color: whitesmoke;
+  height: 330px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+  animation: bounce 1.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+  5% {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+  15% {
+    transform: translateY(0);
+    padding-bottom: 10px;
+  }
+  30% {
+    transform: translateY(-10%);
+  }
+  40% {
+    transform: translateY(0%);
+    padding-bottom: 12px;
+  }
+  50% {
+    transform: translateY(-15%);
+  }
+  70% {
+    transform: translateY(0%);
+    padding-bottom: 14px;
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+    padding-bottom: 16px;
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+    padding-bottom: 18px;
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+    padding-bottom: 18px;
+    opacity: 1;
+  }
+}
+
+.nur1,
+.nur2,
+.nur3,
+.pri1,
+.pri2,
+.pri3,
+.pri4,
+.pri5-6,
+.jss1,
+.jss2,
+.jss3,
+.ss1,
+.ss2,
+.ss3 {
+  width: 20%;
+  height: 240px;
+  background-color: white;
+  margin: 35px 40px;
+  color: blue;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.397);
+}
+
+#start,
+#start1,
+#start2,
+#start3,
+#start4,
+#start5,
+#start6 {
+  width: 100px;
+  height: 40px;
+  margin: 0px 50px;
+  font-size: 15px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+#continue1,
+#continue2,
+#continue3,
+#continue4,
+#continue5,
+#continue6,
+#continue7,
+#continue8 {
+  width: 100px;
+  height: 40px;
+  margin: 0px 50px;
+  font-size: 15px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+#continue1:hover,
+#continue2:hover,
+#continue3:hover,
+#continue4:hover,
+#continue5:hover,
+#continue6:hover,
+#continue7:hover,
+#continue8:hover{
+  cursor: pointer;
+  background-color: white;
+  font-size: 16px;
+  color: blue;
+  border: 1px solid blue;
+} 
+
+#start:hover,
+#start1:hover,
+#start2:hover,
+#start3:hover,
+#start4:hover,
+#start5:hover,
+#start6:hover {
+  cursor: pointer;
+  background-color: white;
+  font-size: 16px;
+  color: blue;
+  border: 1px solid blue;
+}
+
+#gototop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  z-index: 1;
+  background-color: #ee4466;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#gototop2 {
+  width: 50px;
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  border: none;
+  background-color: #ee4466;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 80px;
+  font-size: 18px;
+}
+
+#gototop:hover {
+  background-color: white;
+  color: #ee4466;
+  border: 1px solid #ee4466;
+}
+
+#foot {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  background-color: blue;
+}
+
+#foot p {
+  color: white;
+  text-align: center;
+}
+
+#foot a {
+  color: white;
+  transition: 0.6s ease-in-out;
+}
+
+#foot a:hover {
+  font-size: 17px;
+}
+
+#links {
+  display: flex;
+  justify-content: space-around;
+}
+
+#logo2 {
+  display: none;
+}
+
+.appear {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 40%;
+}
+
+img.avatar2 {
+  width: 30%;
+  border-radius: 100px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  padding-top: 50px;
+}
+
+.notice {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  padding-top: 50px;
+}
+
+.container {
+  margin: 0px 20px;
+}
+
+.container2 {
+  margin: 0px 20px;
+  color: blue;
+}
+
+.container button {
+  width: 100px;
+  height: 40px;
+  margin: 10px 0px;
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.container button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 105px;
+    align-items: center;
+    transition: ease-in-out;
+    display: none;
+  }
+
+  a {
+    color: white;
+  }
+
+  #logo2 {
+    display: inherit;
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+
+  .background {
+    height: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  #end {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .classes {
+    display: none;
+  }
+
+  #links {
+    display: none;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+  .choose {
+    height: 50px;
+  }
+
+
+  #foot p {
+    font-size: 13px;
+  }
+
+  #foot {
+    height: 100px;
+    /* position: fixed; */
+  }
+
+  .container2 {
+    font-size: 15px;
+    margin: 0px 10px;
+  }
+}

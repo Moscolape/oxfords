@@ -1,0 +1,377 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo{
+    width: 80px;
+    height: 55px;
+    margin: 2px
+}
+
+#head{
+    background-color: white;
+    margin: -8px
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+ul{
+    display: flex;
+    color: crimson;
+}
+
+ul li{
+    /* cursor: pointer; */
+    list-style-type: none;
+    margin: 0px 15px;
+    font-size: 15px
+}
+
+ul li:hover a{
+    color: blue;
+    font-size: 20px;
+}
+
+#size{
+    color: blue;
+    font-size: 20px;
+}
+
+a{
+    transition: 0.5s;
+    text-decoration: none;
+    color: #f2738c
+}
+
+h2{
+    text-align: center;
+    /* text-decoration: underline; */
+    color: #f2738c;
+    font-size: 37px;
+    /* color: rgba(255, 0, 0, 0.76) */
+}
+
+#mission p{
+    color: #f2738c;
+    font-size: 17px
+}
+
+.intro{
+    background-image: url('../IMAGES/ourhistory.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 400px;
+    margin: 10px 0px;
+    animation: backview 2s ease-in-out
+}
+
+@keyframes backview {
+    0% {
+      transform: translateY(10%);
+      opacity: 1;
+    }
+    5% {
+      transform: translateY(20%);
+      opacity: 1;
+    }
+    15% {
+      transform: translateY(0);
+      padding-bottom: 10px;
+    }
+    30% {
+      transform: translateY(-10%);
+    }
+    40% {
+      transform: translateY(0%);
+      padding-bottom: 12px;
+    }
+    50% {
+      transform: translateY(-15%);
+    }
+    70% {
+      transform: translateY(0%);
+      padding-bottom: 14px;
+    }
+    80% {
+      transform: translateY(-15%);
+    }
+    90% {
+      transform: translateY(0%);
+      padding-bottom: 16px;
+    }
+    95% {
+      transform: translateY(-7%);
+    }
+    97% {
+      transform: translateY(0%);
+      padding-bottom: 18px;
+    }
+    99% {
+      transform: translateY(-3%);
+    }
+    100% {
+      transform: translateY(0);
+      padding-bottom: 18px;
+      opacity: 1;
+    }
+  }
+
+.vision{
+    background-image: url('../IMAGES/vision.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+    margin: 0px 0px;
+}
+
+.about{
+    margin: 0px 150px
+}
+
+.about h3{
+    display: none
+}
+
+.about p{
+    color: blue;
+    font-size: 17px
+}
+
+#mission{
+    margin: 0px 150px;
+}
+
+.vision p{
+    color: rgb(255, 255, 255);
+    margin: 0px 150px
+}
+
+#dark{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 730px;
+}
+
+#gototop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    background-color: #f2738c;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#gototop2 {
+  width: 50px;
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    background-color: #ee4466;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 80px;
+    font-size: 18px;
+}
+
+#gototop:hover{
+    background-color: white;
+    color: #f2738c;
+    border: 1px solid #f2738c
+}
+
+#foot{
+    width: 100%;
+    height: 140px;
+    background-color: blue
+}
+
+#foot p{
+    color: white;
+    text-align: center
+}
+
+#foot a{
+    color: white;
+    transition: 0.6s ease-in-out
+}
+
+#foot a:hover{
+    font-size: 17px
+}
+
+#links{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo2 {
+    display: none;
+  }
+  
+  .appear {
+    display: flex;
+  }
+
+  #dark h3{
+    display: none
+  }
+
+  @media (max-width: 600px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      height: 105px;
+      align-items: center;
+      display: none;
+    }
+  
+    a {
+      color: white;
+    }
+  
+    #logo2 {
+      display: inherit;
+      margin: 0px 10px;
+      cursor: pointer;
+    }
+  
+    .background {
+      height: 200px;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    #end {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .intro{
+        height: 200px;
+    }
+
+    .about h3{
+        display: inherit
+    }
+
+    .about, #mission{
+        margin: 0px 5px
+    }
+
+    .about p{
+        font-size: 13px
+    }
+
+    #mission h2{
+        font-size: 20px
+    }
+
+    #mission p{
+        font-size: 13px
+    }
+
+    #gototop{
+        bottom: 10px;
+        right: 10px;
+        border-radius: 0px;
+        padding: 10px;
+        font-size: 15px
+    }
+
+    .vision{
+        height: 700px;
+    }
+
+    .vision p{
+        margin: 0px 5px;
+        font-size: 13px
+    }
+
+    #dark{
+        height: 700px;
+        background-color: rgba(0, 0, 0, 0.4)
+    }
+
+    #dark h2{
+        display: none
+    }
+
+    #dark h3{
+        display: inherit
+    }
+
+    #links{
+        display: none
+    }
+
+    #foot p{
+        font-size: 15px
+    }
+
+    #foot{
+        height: 100px;
+    }
+}
+
+@media (max-width: 432px){
+    .vision{
+        height: 750px;
+    }
+
+    #dark{
+        height: 750px;
+    }
+}
+
+@media (max-width: 400px){
+    .vision{
+        height: 800px;
+    }
+
+    #dark{
+        height: 800px;
+    }
+    #foot{
+        height: 110px;
+    }
+}
+
+@media (max-width: 364px){
+    .vision{
+        height: 850px;
+    }
+
+    #dark{
+        height: 850px;
+    }
+    #foot{
+        height: 120px;
+    }
+}
+
+@media (max-width: 334px){
+    .vision{
+        height: 960px;
+    }
+
+    #dark{
+        height: 960px;
+    }
+    #foot{
+        height: 130px;
+    }
+}

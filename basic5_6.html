@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basic 5/6 lessons | Oxfords International School</title>
+    <link rel="icon" href="/IMAGES/oxfordslogo.jpg" type="image/icon type" />
+    <link rel="stylesheet" type="text/css" href="/CSS/basic.css" />
+  </head>
+  <body>
+    <header id="head">
+      <nav>
+        <div id="end">
+          <a href="index.html"
+            ><img id="logo" src="/IMAGES/oxfordslogo.jpg" alt="logo"
+          /></a>
+          <img
+            src="/IMAGES/bar.png"
+            height="50px"
+            width="auto"
+            id="logo2"
+            alt="tri"
+          />
+        </div>
+        <div>
+          <ul class="menulist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a id="info" href="learning.html">Start Learning</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="choose"></div>
+    <marquee scrollamount="8"
+      ><h1 style="color:#ee4466; padding: 10px 0px; text-shadow: 1px 1px blue">
+        WELCOME TO BASIC 5/6. CLICK ON ANY OF THE SUBJECTS TO TAKE YOUR LESSONS.
+      </h1></marquee
+    >
+    <div class="subjects">
+      <a target="_self" href="basic5_6maths.html"
+        ><button>Mathematics</button></a
+      >
+      <a target="_self" href="basic5_6eng.html"
+        ><button>English Language</button></a
+      >
+      <a target="_self" href="basic5_6bsc.html"
+        ><button>Basic Science</button></a
+      >
+      <a target="_self" href="basic5_6igbo.html"
+        ><button>Igbo Language</button></a
+      >
+    </div>
+    <div class="subjects">
+      <a target="_self" href="basic5_6french.html"
+        ><button>French Language</button></a
+      >
+      <a target="_self" href="basic5_6std.html"
+        ><button>Social Studies</button></a
+      >
+      <a target="_self" href="basic5_6arts.html"
+        ><button>Cultural & Creative Arts</button></a
+      >
+      <a target="_self" href="basic5_6agric.html"
+        ><button>Agricultural Science</button></a
+      >
+    </div>
+    <div class="subjects">
+      <a target="_self" href="basic5_6phe.html"
+        ><button>Physical and Health Education</button></a
+      >
+      <a target="_self" href="basic5_6cie.html"
+        ><button>Civic Education</button></a
+      >
+      <a target="_self" href="basic5_6crk.html"
+        ><button>Christian Religious Knowledge</button></a
+      >
+      <a target="_self" href="basic5_6csc.html"
+        ><button>Computer Science & Appreciation</button></a
+      >
+    </div>
+    <marquee behavior="alternate" scrollamount="13"
+      ><h1 style="color:#ee4466; padding: 10px 0px;text-shadow: 1px 1px blue">
+        STAY SAFE!!!
+      </h1></marquee
+    >
+    <button onclick="topFunction()" id="gototop">Back to the Top</button>
+    <button onclick="topFunction()" id="gototop2">^</button>
+    <script>
+      let mybutton = document.getElementById("gototop");
+      let mybutton2 = document.getElementById("gototop2");
+
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 && screen.width > 500) {
+          mybutton.style.display = "block";
+        } else if (document.body.scrollTop > 100 && screen.width < 500){
+          mybutton2.style.display = "block";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+      }
+
+      function open() {
+        let menulists = document.querySelectorAll(".menulist");
+
+        console.log(menulists);
+
+        menulists.forEach(menulist => menulist.classList.toggle("appear"));
+      }
+
+      document.querySelector("#logo2").addEventListener("click", open);
+    </script>
+  </body>
+</html>

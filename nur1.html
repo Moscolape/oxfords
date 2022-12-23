@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nursery 1 lessons | Oxfords International School</title>
+    <link rel="icon" href="/IMAGES/oxfordslogo.jpg" type="image/icon type" />
+    <link rel="stylesheet" type="text/css" href="/CSS/nur.css" />
+  </head>
+  <body>
+    <header id="head">
+      <nav>
+        <div id="end">
+          <a href="index.html"
+            ><img id="logo" src="/IMAGES/oxfordslogo.jpg" alt="logo"
+          /></a>
+          <img
+            src="/IMAGES/bar.png"
+            height="50px"
+            width="auto"
+            id="logo2"
+            alt="tri"
+          />
+        </div>
+        <div>
+          <ul class="menulist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a id="info" href="learning.html">Start Learning</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="choose"></div>
+    <marquee scrollamount="8"
+      ><h1 style="color:#ee4466; padding: 10px 0px; text-shadow: 1px 1px blue">
+        HELLO CHILDREN!!! WELCOME TO NURSERY 1.
+      </h1></marquee
+    >
+    <div class="subjects">
+        <a target="_self" href="nur3maths.html"
+          ><button>Mathematics</button></a
+        >
+        <a target="_self" href="nur3eng.html"
+          ><button>English Language</button></a
+        >
+        <a target="_self" href="nur3arts.html"
+          ><button>Nursery Science</button></a
+        >
+        <a target="_self" href="nur3std.html"
+          ><button>Social Habits</button></a
+        >
+      </div>
+    <marquee behavior="alternate" scrollamount="13"
+      ><h1 style="color:#ee4466; padding: 10px 0px;text-shadow: 1px 1px blue">
+        STAY SAFE!!!
+      </h1></marquee
+    >
+    <button onclick="topFunction()" id="gototop">Back to the Top</button>
+    <button onclick="topFunction()" id="gototop2">^</button>
+    <script>
+      let mybutton = document.getElementById("gototop");
+      let mybutton2 = document.getElementById("gototop2");
+
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 && screen.width > 500) {
+          mybutton.style.display = "block";
+        } else if (document.body.scrollTop > 100 && screen.width < 500){
+          mybutton2.style.display = "block";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+      }
+
+      function open() {
+        let menulists = document.querySelectorAll(".menulist");
+
+        console.log(menulists);
+
+        menulists.forEach(menulist => menulist.classList.toggle("appear"));
+      }
+
+      document.querySelector("#logo2").addEventListener("click", open);
+    </script>
+  </body>
+</html>

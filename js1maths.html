@@ -1,0 +1,144 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS1 Mathematics | Oxfords International School</title>
+    <link rel="icon" href="/IMAGES/oxfordslogo.jpg" type="image/icon type" />
+    <link rel="stylesheet" type="text/css" href="/CSS/js1maths.css" />
+  </head>
+  <body>
+    <header id="head">
+      <nav>
+        <div id="end">
+          <a href="home.html"
+            ><img id="logo" src="/IMAGES/oxfordslogo.jpg" alt="logo"
+          /></a>
+          <img
+            src="/IMAGES/bar.png"
+            height="50px"
+            width="auto"
+            id="logo2"
+            alt="tri"
+          />
+        </div>
+        <div>
+          <ul class="menulist">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a id="info" href="learning.html">Start Learning</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="choose"></div>
+    <div class="subjects">
+      <a target="_self" href="js1maths.html"
+        ><button
+          style="background-color: white; color: blue; border: 1px solid blue"
+        >
+          Mathematics
+        </button></a
+      >
+      <a target="_self" href="js1eng.html"><button>English Language</button></a>
+      <a target="_self" href="js1bsc.html"
+        ><button>
+          Basic Science
+        </button></a
+      >
+      <a target="_self" href="js1lit.html"
+        ><button>Literature-In-English</button></a
+      >
+      <a target="_self" href="js1igbo.html"><button>Igbo Language</button></a>
+    </div>
+    <br />
+    <div class="subjects">
+      <a target="_self" href="js1french.html"
+        ><button>French Language</button></a
+      >
+      <a target="_self" href="js1std.html"><button>Social Studies</button></a>
+      <a target="_self" href="js1arts.html"
+        ><button>Fine & Applied Arts</button></a
+      >
+      <a target="_self" href="js1agric.html"
+        ><button>Agricultural Science</button></a
+      >
+      <a target="_self" href="js1btc.html"><button>Basic Tech</button></a>
+    </div>
+    <h1 style="color:#ee4466; text-decoration:underline; text-align:center">
+      OXFORDS E-LESSONS
+    </h1>
+    <h3 style="color:blue">
+      CLICK ON ANY OF THE FOLLOWING IMAGES TO OPEN OR DOWNLOAD YOUR LESSONS ON
+      MICROSOFT POWERPOINT OR MICROSOFT WORD
+    </h3>
+    <div class="ppt">
+      <div>
+        <a
+          href="/VIDEO/B7Maths1.docx"
+          download="JS1 Maths - Measurement of Length and Units, Perimeter of Plane Shapes"
+        >
+          <img src="/IMAGES/peri.jpg" alt=".pptx" width="100%" height="250px" />
+        </a>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="gototop">Back to the Top</button>
+    <button onclick="topFunction()" id="gototop2">^</button>
+    <script src="/JAVASCRIPT/learning.js"></script>
+    <script>
+      let mybutton = document.getElementById("gototop");
+      let mybutton2 = document.getElementById("gototop2");
+
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 && screen.width > 500) {
+          mybutton.style.display = "block";
+        } else if (document.body.scrollTop > 100 && screen.width < 500) {
+          mybutton2.style.display = "block";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+      }
+
+      function open() {
+        let menulists = document.querySelectorAll(".menulist");
+
+        console.log(menulists);
+
+        menulists.forEach(menulist => menulist.classList.toggle("appear"));
+      }
+
+      document.querySelector("#logo2").addEventListener("click", open);
+
+      // window.onload = function(){
+      //   moses();
+      // }
+
+      // function moses(){
+      //   if (window.location.pathname == '/section/js1maths.html'){
+      //     let me = prompt("please re-enter your pin");
+      //     let pin = ["1234","5678"]
+
+      //     if(me == null || me == ""){
+      //       alert("You did not re-enter your pin!");
+      //       window.location.pathname = "/section/learning.html";
+      //     }else if(!pin.includes(me) && me !== ""){
+      //       alert("Incorrect pin!!");
+      //       window.location.pathname = "/section/learning.html";
+      //       return;
+      //     }else if(pin.includes(me)){
+      //       alert("Thank you!! Your pin is correct.");
+      //       return;
+      //     }
+      //   }
+      // }
+    </script>
+  </body>
+</html>
